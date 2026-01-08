@@ -1,10 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
-
 const HeroSection = () => {
   const [displayText, setDisplayText] = useState('');
   const fullText = 'Software Engineer';
-  
   useEffect(() => {
     let index = 0;
     const timer = setInterval(() => {
@@ -17,9 +15,7 @@ const HeroSection = () => {
     }, 100);
     return () => clearInterval(timer);
   }, []);
-
-  return (
-    <section className="min-h-screen flex items-center justify-center relative scanline">
+  return <section className="min-h-screen flex items-center justify-center relative scanline">
       {/* Background grid effect */}
       <div className="absolute inset-0 bg-[linear-gradient(hsl(var(--primary)/0.03)_1px,transparent_1px),linear-gradient(90deg,hsl(var(--primary)/0.03)_1px,transparent_1px)] bg-[size:50px_50px]" />
       
@@ -39,7 +35,7 @@ const HeroSection = () => {
           {/* Name */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 opacity-0 animate-fade-in-up animation-delay-200">
             <span className="text-foreground">I'm </span>
-            <span className="text-gradient">Your Name</span>
+            <span className="text-gradient">Ozan Utku Yılmaz</span>
           </h1>
 
           {/* Typing effect title */}
@@ -58,26 +54,13 @@ const HeroSection = () => {
 
           {/* Social links */}
           <div className="flex items-center justify-center gap-6 opacity-0 animate-fade-in-up animation-delay-600">
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 border-glow rounded-full text-muted-foreground hover:text-primary hover:border-primary/60 transition-all"
-            >
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-3 border-glow rounded-full text-muted-foreground hover:text-primary hover:border-primary/60 transition-all">
               <Github size={24} />
             </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-3 border-glow rounded-full text-muted-foreground hover:text-primary hover:border-primary/60 transition-all"
-            >
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-3 border-glow rounded-full text-muted-foreground hover:text-primary hover:border-primary/60 transition-all">
               <Linkedin size={24} />
             </a>
-            <a
-              href="mailto:your@email.com"
-              className="p-3 border-glow rounded-full text-muted-foreground hover:text-primary hover:border-primary/60 transition-all"
-            >
+            <a href="mailto:your@email.com" className="p-3 border-glow rounded-full text-muted-foreground hover:text-primary hover:border-primary/60 transition-all">
               <Mail size={24} />
             </a>
           </div>
@@ -90,8 +73,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
