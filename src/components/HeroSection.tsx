@@ -42,7 +42,7 @@ const HeroSection = () => {
           <div className="h-12 mb-8 opacity-0 animate-fade-in-up animation-delay-400">
             <span className="font-mono text-2xl md:text-3xl text-primary glow-text">
               {displayText}
-              <span className="animate-pulse">_</span>
+              <span className="animate-pulse"></span>
             </span>
           </div>
 
