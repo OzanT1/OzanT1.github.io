@@ -28,11 +28,11 @@ const ContactSection = () => {
               </p>
               <p className="pl-4">
                 <span className="text-foreground">email</span>:{' '}
-                <span className="text-terminal-green">"your@email.com"</span>,
+                <span className="text-terminal-green">"ozanutkuyilmaz@gmail.com"</span>,
               </p>
               <p className="pl-4">
                 <span className="text-foreground">location</span>:{' '}
-                <span className="text-terminal-green">"Your City, Country"</span>,
+                <span className="text-terminal-green">"Turkey"</span>,
               </p>
               <p className="pl-4">
                 <span className="text-foreground">availability</span>:{' '}
@@ -42,7 +42,7 @@ const ContactSection = () => {
             </div>
 
             <a
-              href="mailto:your@email.com"
+              href="mailto:ozanutkuyilmaz@gmail.com"
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-mono text-sm rounded-md hover:bg-primary/90 transition-colors glow-box"
             >
               <Send size={18} />
@@ -53,7 +53,7 @@ const ContactSection = () => {
           {/* Social links */}
           <div className="flex items-center justify-center gap-6">
             <a
-              href="https://github.com"
+              href="https://github.com/OzanT1"
               target="_blank"
               rel="noopener noreferrer"
               className="p-4 border border-border rounded-lg text-muted-foreground hover:text-primary hover:border-primary/50 transition-all card-hover"
@@ -61,7 +61,7 @@ const ContactSection = () => {
               <Github size={24} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/ozan-utku-yılmaz"
               target="_blank"
               rel="noopener noreferrer"
               className="p-4 border border-border rounded-lg text-muted-foreground hover:text-primary hover:border-primary/50 transition-all card-hover"
@@ -69,7 +69,7 @@ const ContactSection = () => {
               <Linkedin size={24} />
             </a>
             <a
-              href="mailto:your@email.com"
+              href="mailto:ozanutkuyilmaz@gmail.com"
               className="p-4 border border-border rounded-lg text-muted-foreground hover:text-primary hover:border-primary/50 transition-all card-hover"
             >
               <Mail size={24} />

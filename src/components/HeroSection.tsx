@@ -54,13 +54,13 @@ const HeroSection = () => {
 
           {/* Social links */}
           <div className="flex items-center justify-center gap-6 opacity-0 animate-fade-in-up animation-delay-600">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-3 border-glow rounded-full text-muted-foreground hover:text-primary hover:border-primary/60 transition-all">
+            <a href="https://github.com/OzanT1" target="_blank" rel="noopener noreferrer" className="p-3 border-glow rounded-full text-muted-foreground hover:text-primary hover:border-primary/60 transition-all">
               <Github size={24} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-3 border-glow rounded-full text-muted-foreground hover:text-primary hover:border-primary/60 transition-all">
+            <a href="https://www.linkedin.com/in/ozan-utku-yılmaz" target="_blank" rel="noopener noreferrer" className="p-3 border-glow rounded-full text-muted-foreground hover:text-primary hover:border-primary/60 transition-all">
               <Linkedin size={24} />
             </a>
-            <a href="mailto:your@email.com" className="p-3 border-glow rounded-full text-muted-foreground hover:text-primary hover:border-primary/60 transition-all">
+            <a href="mailto:ozanutkuyilmaz@gmail.com" className="p-3 border-glow rounded-full text-muted-foreground hover:text-primary hover:border-primary/60 transition-all">
               <Mail size={24} />
             </a>
           </div>

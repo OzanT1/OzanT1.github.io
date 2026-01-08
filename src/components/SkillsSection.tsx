@@ -4,19 +4,27 @@ const SkillsSection = () => {
   const skillCategories = [
     {
       title: 'Languages',
-      skills: ['TypeScript', 'Python', 'C++', 'C#', 'Go', 'Rust'],
+      skills: ['C#', 'Python', 'C++', 'Java', 'JavaScript', 'SQL', 'HTML/CSS'],
     },
     {
-      title: 'Backend',
-      skills: ['Node.js', 'FastAPI', 'PostgreSQL', 'Redis', 'Docker', 'Kubernetes'],
+      title: 'Frameworks & Libraries',
+      skills: ['ASP.NET Core', 'Entity Framework', 'FastAPI', 'Node.js', 'Express.js', 'React', 'PyTorch'],
     },
     {
       title: 'Game Dev',
-      skills: ['Unity', 'Unreal Engine', 'Godot', 'OpenGL', 'Networking', 'Physics'],
+      skills: ['Unreal Engine', 'Unity'],
     },
     {
-      title: 'Tools & DevOps',
-      skills: ['Git', 'CI/CD', 'AWS', 'Linux', 'Monitoring', 'Testing'],
+      title: 'Databases & Cloud',
+      skills: ['MySQL', 'PostgreSQL', 'Redis', 'AWS', 'Firebase', 'Docker'],
+    },
+    {
+      title: 'Tools & Concepts',
+      skills: ['Git', 'GitHub', 'WebSockets', 'AI Integrations', 'OOP', 'Clean Code'],
+    },
+    {
+      title: 'Languages (Spoken)',
+      skills: ['Turkish (Native)', 'English (Proficient)'],
     },
   ];
 
@@ -33,7 +41,7 @@ const SkillsSection = () => {
             <div className="flex-1 h-px bg-border" />
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {skillCategories.map((category, categoryIndex) => (
               <div
                 key={category.title}
