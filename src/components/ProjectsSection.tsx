@@ -1,8 +1,27 @@
-import { FolderGit2, ExternalLink, Github, Trophy, Gamepad2, Server, Youtube } from 'lucide-react';
+import { FolderGit2, ExternalLink, Github, Trophy, Gamepad2, Server, Youtube, LucideIcon } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
+interface Project {
+  title: string;
+  description: string;
+  tech: string[];
+  github?: string;
+  youtube?: string;
+  live?: string;
+  featured?: boolean;
+  inDev?: boolean;
+  award?: boolean;
+}
+
+interface Category {
+  id: string;
+  label: string;
+  icon: LucideIcon;
+  projects: Project[];
+}
+
 const ProjectsSection = () => {
-  const categories = [
+  const categories: Category[] = [
     {
       id: 'backend',
       label: 'Backend',
