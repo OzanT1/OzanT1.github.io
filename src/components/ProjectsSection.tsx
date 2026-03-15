@@ -174,7 +174,7 @@ const ProjectsSection = () => {
                               </a>
                             )}
                             {project.youtube && (
-                              <a href={project.youtube} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-red-500 transition-colors">
+                              <a href={project.youtube} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
                                 <Youtube size={20} />
                               </a>
                             )}
