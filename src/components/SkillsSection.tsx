@@ -65,33 +65,6 @@ const SkillsSection = () => {
             ))}
           </div>
 
-          {/* Experience bar visualization */}
-          <div className="mt-16 terminal-bg border-glow rounded-lg p-8">
-            <h3 className="font-mono text-lg mb-6 text-center">
-              <span className="text-primary">//</span> Proficiency Levels
-            </h3>
-            <div className="space-y-4 max-w-2xl mx-auto">
-              {[
-                { skill: 'Backend Architecture', level: 90 },
-                { skill: 'Game Development', level: 85 },
-                { skill: 'System Design', level: 88 },
-                { skill: 'DevOps', level: 75 },
-              ].map((item) => (
-                <div key={item.skill} className="space-y-2">
-                  <div className="flex justify-between text-sm font-mono">
-                    <span className="text-foreground">{item.skill}</span>
-                    <span className="text-primary">{item.level}%</span>
-                  </div>
-                  <div className="h-2 bg-muted rounded-full overflow-hidden">
-                    <div
-                      className="h-full bg-gradient-to-r from-primary to-accent rounded-full transition-all duration-1000"
-                      style={{ width: `${item.level}%` }}
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
     </section>
