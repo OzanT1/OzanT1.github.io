@@ -34,9 +34,8 @@ const SkillsSection = () => {
         <div className="max-w-6xl mx-auto">
           {/* Section header */}
           <div className="flex items-center gap-4 mb-12">
-            <Cpu className="text-primary" size={28} />
-            <h2 className="font-mono text-3xl font-bold">
-              <span className="text-primary">02.</span> Skills
+            <h2 className="text-3xl font-bold">
+              Skills
             </h2>
             <div className="flex-1 h-px bg-border" />
           </div>
