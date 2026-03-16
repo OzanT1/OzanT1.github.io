@@ -35,21 +35,12 @@ const AboutSection = () => {
           <div className="grid md:grid-cols-2 gap-12 items-start">
             {/* Text content */}
             <div className="space-y-6">
-              <div className="terminal-bg border-glow rounded-lg p-6 font-mono text-sm">
-                <div className="flex items-center gap-2 mb-4 text-muted-foreground">
-                  <div className="w-3 h-3 rounded-full bg-destructive" />
-                  <div className="w-3 h-3 rounded-full bg-yellow-500" />
-                  <div className="w-3 h-3 rounded-full bg-green-500" />
-                  <span className="ml-2">about.sh</span>
-                </div>
-                <div className="space-y-2 text-muted-foreground">
-                  <p><span className="text-primary">$</span> cat introduction.txt</p>
-                  <p className="text-foreground leading-relaxed">
-                    I'm a software engineer with a deep passion for both backend development 
-                    and game development. I love the challenge of building systems that are 
-                    both performant and maintainable.
-                  </p>
-                </div>
+              <div className="space-y-2 text-muted-foreground">
+                <p className="text-foreground leading-relaxed text-lg">
+                  I'm a software engineer with a deep passion for both backend development 
+                  and game development. I love the challenge of building systems that are 
+                  both performant and maintainable.
+                </p>
               </div>
 
               <p className="text-muted-foreground leading-relaxed">

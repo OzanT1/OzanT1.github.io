@@ -38,11 +38,10 @@ const HeroSection = () => {
             <span className="text-gradient">Ozan Utku Yılmaz</span>
           </h1>
 
-          {/* Typing effect title */}
+          {/* Role */}
           <div className="h-12 mb-8 opacity-0 animate-fade-in-up animation-delay-400">
-            <span className="font-mono text-2xl md:text-3xl text-primary glow-text">
-              {displayText}
-              <span className="animate-pulse"></span>
+            <span className="text-2xl md:text-3xl text-primary glow-text font-medium">
+              Software Engineer
             </span>
           </div>
 
