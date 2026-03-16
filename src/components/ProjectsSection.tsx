@@ -50,12 +50,12 @@ const ProjectCard = ({ project }: { project: Project }) => (
       {/* Badges */}
       <div className="flex items-center gap-2 mb-2">
         {project.award && (
-          <span className="font-mono text-xs px-2 py-0.5 bg-accent/20 text-accent rounded-full border border-accent/30">
+          <span className="text-xs px-2 py-0.5 bg-accent/20 text-accent rounded-full border border-accent/30">
             🏆 Award
           </span>
         )}
         {project.inDev && (
-          <span className="font-mono text-xs px-2 py-0.5 bg-accent/20 text-accent rounded-full border border-accent/30">
+          <span className="text-xs px-2 py-0.5 bg-accent/20 text-accent rounded-full border border-accent/30">
             In Development
           </span>
         )}
