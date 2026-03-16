@@ -41,7 +41,7 @@ const ProjectCard = ({ project }: { project: Project }) => (
     <div className="aspect-video bg-card relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
       <div className="absolute inset-0 flex items-center justify-center">
-        <span className="font-mono text-muted-foreground text-sm text-center px-4">[ {project.title} ]</span>
+        <span className="text-muted-foreground text-sm text-center px-4">{project.title}</span>
       </div>
       <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity" />
     </div>
