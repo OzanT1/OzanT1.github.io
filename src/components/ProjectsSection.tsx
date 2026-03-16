@@ -180,7 +180,7 @@ const ProjectsSection = () => {
                 <TabsTrigger
                   key={cat.id}
                   value={cat.id}
-                  className="font-mono text-sm data-[state=active]:bg-primary/20 data-[state=active]:text-primary gap-2"
+                  className="text-sm data-[state=active]:bg-primary/20 data-[state=active]:text-primary gap-2"
                 >
                   <cat.icon size={16} />
                   {cat.label}
