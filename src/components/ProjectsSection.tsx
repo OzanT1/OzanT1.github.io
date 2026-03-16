@@ -168,9 +168,8 @@ const ProjectsSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center gap-4 mb-12">
-            <FolderGit2 className="text-primary" size={28} />
-            <h2 className="font-mono text-3xl font-bold">
-              <span className="text-primary">03.</span> Projects
+            <h2 className="text-3xl font-bold">
+              Projects
             </h2>
             <div className="flex-1 h-px bg-border" />
           </div>

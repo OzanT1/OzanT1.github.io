@@ -1,4 +1,4 @@
-import { Terminal, Gamepad2, Server, Code2 } from 'lucide-react';
+import { Gamepad2, Server, Code2 } from 'lucide-react';
 
 const AboutSection = () => {
   const highlights = [
@@ -25,9 +25,8 @@ const AboutSection = () => {
         <div className="max-w-6xl mx-auto">
           {/* Section header */}
           <div className="flex items-center gap-4 mb-12">
-            <Terminal className="text-primary" size={28} />
-            <h2 className="font-mono text-3xl font-bold">
-              <span className="text-primary">01.</span> About Me
+            <h2 className="text-3xl font-bold">
+              About Me
             </h2>
             <div className="flex-1 h-px bg-border" />
           </div>

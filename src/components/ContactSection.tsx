@@ -7,9 +7,8 @@ const ContactSection = () => {
         <div className="max-w-2xl mx-auto text-center">
           {/* Section header */}
           <div className="flex items-center justify-center gap-4 mb-8">
-            <Mail className="text-primary" size={28} />
-            <h2 className="font-mono text-3xl font-bold">
-              <span className="text-primary">04.</span> Get In Touch
+            <h2 className="text-3xl font-bold">
+              Get In Touch
             </h2>
           </div>
 
