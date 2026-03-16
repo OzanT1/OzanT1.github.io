@@ -1,21 +1,8 @@
-import { useEffect, useState } from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
+
 const HeroSection = () => {
-  const [displayText, setDisplayText] = useState('');
-  const fullText = 'Software Engineer';
-  useEffect(() => {
-    let index = 0;
-    const timer = setInterval(() => {
-      if (index <= fullText.length) {
-        setDisplayText(fullText.slice(0, index));
-        index++;
-      } else {
-        clearInterval(timer);
-      }
-    }, 100);
-    return () => clearInterval(timer);
-  }, []);
-  return <section className="min-h-screen flex items-center justify-center relative scanline">
+  return (
+    <section className="min-h-screen flex items-center justify-center relative scanline">
       {/* Background grid effect */}
       <div className="absolute inset-0 bg-[linear-gradient(hsl(var(--primary)/0.03)_1px,transparent_1px),linear-gradient(90deg,hsl(var(--primary)/0.03)_1px,transparent_1px)] bg-[size:50px_50px]" />
       
@@ -72,6 +59,8 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default HeroSection;
