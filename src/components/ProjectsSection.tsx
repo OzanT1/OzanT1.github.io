@@ -1,4 +1,4 @@
-import { FolderGit2, ExternalLink, Github, Trophy, Gamepad2, Server, Youtube, LucideIcon } from 'lucide-react';
+import { ExternalLink, Github, Trophy, Gamepad2, Server, Youtube, LucideIcon } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 interface Project {
@@ -24,7 +24,7 @@ const ProjectLink = ({ href, icon: Icon, label, variant = 'primary' }: { href: s
     href={href}
     target="_blank"
     rel="noopener noreferrer"
-    className={`inline-flex items-center gap-2 font-mono text-sm px-4 py-2 rounded-lg border transition-all duration-300 ${
+    className={`inline-flex items-center gap-2 text-sm px-4 py-2 rounded-lg border transition-all duration-300 ${
       variant === 'accent'
         ? 'border-accent/40 text-accent hover:bg-accent/20 hover:border-accent'
         : 'border-primary/40 text-primary hover:bg-primary/20 hover:border-primary'
