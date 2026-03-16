@@ -34,30 +34,29 @@ const SkillsSection = () => {
         <div className="max-w-6xl mx-auto">
           {/* Section header */}
           <div className="flex items-center gap-4 mb-12">
-            <Cpu className="text-primary" size={28} />
-            <h2 className="font-mono text-3xl font-bold">
-              <span className="text-primary">02.</span> Skills
+            <h2 className="text-3xl font-bold">
+              Skills
             </h2>
             <div className="flex-1 h-px bg-border" />
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {skillCategories.map((category, categoryIndex) => (
+            {skillCategories.map((category) => (
               <div
                 key={category.title}
                 className="bg-card border border-border rounded-lg p-6 card-hover"
               >
-                <h3 className="font-mono text-lg font-semibold text-primary mb-4">
-                  {'{'}  {category.title}  {'}'}
+                <h3 className="text-lg font-semibold text-primary mb-4">
+                  {category.title}
                 </h3>
                 <ul className="space-y-3">
-                  {category.skills.map((skill, skillIndex) => (
+                  {category.skills.map((skill) => (
                     <li
                       key={skill}
                       className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group"
                     >
                       <span className="w-2 h-2 rounded-full bg-primary/50 group-hover:bg-primary group-hover:shadow-[0_0_8px_hsl(var(--primary))] transition-all" />
-                      <span className="font-mono text-sm">{skill}</span>
+                      <span className="text-sm">{skill}</span>
                     </li>
                   ))}
                 </ul>

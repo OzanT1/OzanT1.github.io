@@ -1,21 +1,8 @@
-import { useEffect, useState } from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
+
 const HeroSection = () => {
-  const [displayText, setDisplayText] = useState('');
-  const fullText = 'Software Engineer';
-  useEffect(() => {
-    let index = 0;
-    const timer = setInterval(() => {
-      if (index <= fullText.length) {
-        setDisplayText(fullText.slice(0, index));
-        index++;
-      } else {
-        clearInterval(timer);
-      }
-    }, 100);
-    return () => clearInterval(timer);
-  }, []);
-  return <section className="min-h-screen flex items-center justify-center relative scanline">
+  return (
+    <section className="min-h-screen flex items-center justify-center relative scanline">
       {/* Background grid effect */}
       <div className="absolute inset-0 bg-[linear-gradient(hsl(var(--primary)/0.03)_1px,transparent_1px),linear-gradient(90deg,hsl(var(--primary)/0.03)_1px,transparent_1px)] bg-[size:50px_50px]" />
       
@@ -25,10 +12,10 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Terminal-style greeting */}
+          {/* Greeting */}
           <div className="inline-block mb-6 opacity-0 animate-fade-in-up">
-            <span className="font-mono text-sm text-muted-foreground">
-              <span className="text-primary">$</span> echo "Hello, World!"
+            <span className="text-sm text-muted-foreground uppercase tracking-wider">
+              Hello, I'm
             </span>
           </div>
 
@@ -38,11 +25,10 @@ const HeroSection = () => {
             <span className="text-gradient">Ozan Utku Yılmaz</span>
           </h1>
 
-          {/* Typing effect title */}
+          {/* Role */}
           <div className="h-12 mb-8 opacity-0 animate-fade-in-up animation-delay-400">
-            <span className="font-mono text-2xl md:text-3xl text-primary glow-text">
-              {displayText}
-              <span className="animate-pulse"></span>
+            <span className="text-2xl md:text-3xl text-primary glow-text font-medium">
+              Software Engineer
             </span>
           </div>
 
@@ -73,6 +59,8 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default HeroSection;

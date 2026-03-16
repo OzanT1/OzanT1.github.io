@@ -1,4 +1,4 @@
-import { Terminal, Gamepad2, Server, Code2 } from 'lucide-react';
+import { Gamepad2, Server, Code2 } from 'lucide-react';
 
 const AboutSection = () => {
   const highlights = [
@@ -25,9 +25,8 @@ const AboutSection = () => {
         <div className="max-w-6xl mx-auto">
           {/* Section header */}
           <div className="flex items-center gap-4 mb-12">
-            <Terminal className="text-primary" size={28} />
-            <h2 className="font-mono text-3xl font-bold">
-              <span className="text-primary">01.</span> About Me
+            <h2 className="text-3xl font-bold">
+              About Me
             </h2>
             <div className="flex-1 h-px bg-border" />
           </div>
@@ -35,21 +34,12 @@ const AboutSection = () => {
           <div className="grid md:grid-cols-2 gap-12 items-start">
             {/* Text content */}
             <div className="space-y-6">
-              <div className="terminal-bg border-glow rounded-lg p-6 font-mono text-sm">
-                <div className="flex items-center gap-2 mb-4 text-muted-foreground">
-                  <div className="w-3 h-3 rounded-full bg-destructive" />
-                  <div className="w-3 h-3 rounded-full bg-yellow-500" />
-                  <div className="w-3 h-3 rounded-full bg-green-500" />
-                  <span className="ml-2">about.sh</span>
-                </div>
-                <div className="space-y-2 text-muted-foreground">
-                  <p><span className="text-primary">$</span> cat introduction.txt</p>
-                  <p className="text-foreground leading-relaxed">
-                    I'm a software engineer with a deep passion for both backend development 
-                    and game development. I love the challenge of building systems that are 
-                    both performant and maintainable.
-                  </p>
-                </div>
+              <div className="space-y-2 text-muted-foreground">
+                <p className="text-foreground leading-relaxed text-lg">
+                  I'm a software engineer with a deep passion for both backend development 
+                  and game development. I love the challenge of building systems that are 
+                  both performant and maintainable.
+                </p>
               </div>
 
               <p className="text-muted-foreground leading-relaxed">

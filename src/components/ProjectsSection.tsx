@@ -1,4 +1,4 @@
-import { FolderGit2, ExternalLink, Github, Trophy, Gamepad2, Server, Youtube, LucideIcon } from 'lucide-react';
+import { ExternalLink, Github, Trophy, Gamepad2, Server, Youtube, LucideIcon } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 interface Project {
@@ -24,7 +24,7 @@ const ProjectLink = ({ href, icon: Icon, label, variant = 'primary' }: { href: s
     href={href}
     target="_blank"
     rel="noopener noreferrer"
-    className={`inline-flex items-center gap-2 font-mono text-sm px-4 py-2 rounded-lg border transition-all duration-300 ${
+    className={`inline-flex items-center gap-2 text-sm px-4 py-2 rounded-lg border transition-all duration-300 ${
       variant === 'accent'
         ? 'border-accent/40 text-accent hover:bg-accent/20 hover:border-accent'
         : 'border-primary/40 text-primary hover:bg-primary/20 hover:border-primary'
@@ -41,7 +41,7 @@ const ProjectCard = ({ project }: { project: Project }) => (
     <div className="aspect-video bg-card relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
       <div className="absolute inset-0 flex items-center justify-center">
-        <span className="font-mono text-muted-foreground text-sm text-center px-4">[ {project.title} ]</span>
+        <span className="text-muted-foreground text-sm text-center px-4">{project.title}</span>
       </div>
       <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity" />
     </div>
@@ -50,12 +50,12 @@ const ProjectCard = ({ project }: { project: Project }) => (
       {/* Badges */}
       <div className="flex items-center gap-2 mb-2">
         {project.award && (
-          <span className="font-mono text-xs px-2 py-0.5 bg-accent/20 text-accent rounded-full border border-accent/30">
+          <span className="text-xs px-2 py-0.5 bg-accent/20 text-accent rounded-full border border-accent/30">
             🏆 Award
           </span>
         )}
         {project.inDev && (
-          <span className="font-mono text-xs px-2 py-0.5 bg-accent/20 text-accent rounded-full border border-accent/30">
+          <span className="text-xs px-2 py-0.5 bg-accent/20 text-accent rounded-full border border-accent/30">
             In Development
           </span>
         )}
@@ -79,7 +79,7 @@ const ProjectCard = ({ project }: { project: Project }) => (
       {/* Tech tags */}
       <div className="flex flex-wrap gap-2">
         {project.tech.map((tech) => (
-          <span key={tech} className="font-mono text-xs px-3 py-1 bg-primary/10 text-primary rounded-full">
+          <span key={tech} className="text-xs px-3 py-1 bg-primary/10 text-primary rounded-full">
             {tech}
           </span>
         ))}
@@ -168,9 +168,8 @@ const ProjectsSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center gap-4 mb-12">
-            <FolderGit2 className="text-primary" size={28} />
-            <h2 className="font-mono text-3xl font-bold">
-              <span className="text-primary">03.</span> Projects
+            <h2 className="text-3xl font-bold">
+              Projects
             </h2>
             <div className="flex-1 h-px bg-border" />
           </div>
@@ -181,7 +180,7 @@ const ProjectsSection = () => {
                 <TabsTrigger
                   key={cat.id}
                   value={cat.id}
-                  className="font-mono text-sm data-[state=active]:bg-primary/20 data-[state=active]:text-primary gap-2"
+                  className="text-sm data-[state=active]:bg-primary/20 data-[state=active]:text-primary gap-2"
                 >
                   <cat.icon size={16} />
                   {cat.label}

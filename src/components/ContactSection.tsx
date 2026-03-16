@@ -7,9 +7,8 @@ const ContactSection = () => {
         <div className="max-w-2xl mx-auto text-center">
           {/* Section header */}
           <div className="flex items-center justify-center gap-4 mb-8">
-            <Mail className="text-primary" size={28} />
-            <h2 className="font-mono text-3xl font-bold">
-              <span className="text-primary">04.</span> Get In Touch
+            <h2 className="text-3xl font-bold">
+              Get In Touch
             </h2>
           </div>
 
@@ -20,33 +19,28 @@ const ContactSection = () => {
           </p>
 
           {/* Contact card */}
-          <div className="terminal-bg border-glow rounded-lg p-8 mb-8">
-            <div className="font-mono text-sm text-left space-y-2 mb-6">
-              <p className="text-muted-foreground">
-                <span className="text-primary">const</span>{' '}
-                <span className="text-accent">contact</span> = {'{'}
-              </p>
-              <p className="pl-4">
-                <span className="text-foreground">email</span>:{' '}
-                <span className="text-terminal-green">"ozanutkuyilmaz@gmail.com"</span>,
-              </p>
-              <p className="pl-4">
-                <span className="text-foreground">location</span>:{' '}
-                <span className="text-terminal-green">"Turkey"</span>,
-              </p>
-              <p className="pl-4">
-                <span className="text-foreground">availability</span>:{' '}
-                <span className="text-terminal-green">"Open to opportunities"</span>
-              </p>
-              <p className="text-muted-foreground">{'}'}</p>
+          <div className="bg-card border border-border rounded-lg p-8 mb-8">
+            <div className="space-y-4 mb-8 text-left">
+              <div className="flex items-center gap-3">
+                <span className="text-muted-foreground w-24">Email:</span>
+                <span className="text-foreground">ozanutkuyilmaz@gmail.com</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-muted-foreground w-24">Location:</span>
+                <span className="text-foreground">Turkey</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-muted-foreground w-24">Status:</span>
+                <span className="text-primary">Open to opportunities</span>
+              </div>
             </div>
 
             <a
               href="mailto:ozanutkuyilmaz@gmail.com"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-mono text-sm rounded-md hover:bg-primary/90 transition-colors glow-box"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-medium rounded-md hover:bg-primary/90 transition-colors glow-box"
             >
               <Send size={18} />
-              Say Hello
+              Send Message
             </a>
           </div>
 
