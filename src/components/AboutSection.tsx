@@ -5,7 +5,7 @@ const AboutSection = () => {
   {
     icon: Server,
     title: 'Backend Development',
-    description: 'Building scalable APIs, microservices, and distributed systems'
+    description: 'Building scalable APIs, server-side solutions, and distributed systems using modern .NET ecosystem'
   },
   {
     icon: Gamepad2,
