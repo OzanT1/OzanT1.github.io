@@ -12,7 +12,7 @@ const SkillsSection = () => {
     },
     {
       title: 'Game Development',
-      skills: ['Unreal Engine', 'Unity'],
+      skills: ['Unreal Engine 5', 'Unity'],
     },
     {
       title: 'Databases & Cloud',
