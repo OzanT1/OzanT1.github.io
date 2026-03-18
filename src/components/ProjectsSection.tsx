@@ -43,10 +43,16 @@ const ProjectCard = ({ project }: { project: Project }) => (
   <div className={`bg-card border rounded-lg overflow-hidden card-hover group ${project.award ? 'border-accent/50' : 'border-border'}`}>
     {/* Image placeholder */}
     <div className="aspect-video bg-card relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
-      <div className="absolute inset-0 flex items-center justify-center">
-        <span className="text-muted-foreground text-sm text-center px-4">{project.title}</span>
-      </div>
+      {project.image ? (
+        <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
+      ) : (
+        <>
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <span className="text-muted-foreground text-sm text-center px-4">{project.title}</span>
+          </div>
+        </>
+      )}
       <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity" />
     </div>
 
