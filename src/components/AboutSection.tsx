@@ -2,22 +2,22 @@ import { Gamepad2, Server, Code2 } from 'lucide-react';
 
 const AboutSection = () => {
   const highlights = [
-    {
-      icon: Server,
-      title: 'Backend Development',
-      description: 'Building scalable APIs, microservices, and distributed systems',
-    },
-    {
-      icon: Gamepad2,
-      title: 'Game Development',
-      description: 'Creating immersive experiences with Unity, Unreal, and custom engines',
-    },
-    {
-      icon: Code2,
-      title: 'Clean Architecture',
-      description: 'Writing maintainable, testable, and performant code',
-    },
-  ];
+  {
+    icon: Server,
+    title: 'Backend Development',
+    description: 'Building scalable APIs, microservices, and distributed systems'
+  },
+  {
+    icon: Gamepad2,
+    title: 'Game Development',
+    description: 'Creating immersive experiences with Unity, Unreal, and custom engines'
+  },
+  {
+    icon: Code2,
+    title: 'Clean Architecture',
+    description: 'Writing maintainable, testable, and performant code'
+  }];
+
 
   return (
     <section id="about" className="py-24 relative">
@@ -36,9 +36,9 @@ const AboutSection = () => {
             <div className="space-y-6">
               <div className="space-y-2 text-muted-foreground">
                 <p className="text-foreground leading-relaxed text-lg">
-                  I'm a software engineer with a deep passion for both backend development 
-                  and game development. I love the challenge of building systems that are 
-                  both performant and maintainable.
+                  I'm a software engineer with a deep passion for both game development and backend development. I love the challenge of building systems that are both performant and maintainable.
+                
+
                 </p>
               </div>
 
@@ -58,12 +58,12 @@ const AboutSection = () => {
 
             {/* Highlight cards */}
             <div className="space-y-4">
-              {highlights.map((item, index) => (
-                <div
-                  key={item.title}
-                  className="group bg-card border border-border rounded-lg p-6 card-hover"
-                  style={{ animationDelay: `${index * 100}ms` }}
-                >
+              {highlights.map((item, index) =>
+              <div
+                key={item.title}
+                className="group bg-card border border-border rounded-lg p-6 card-hover"
+                style={{ animationDelay: `${index * 100}ms` }}>
+                
                   <div className="flex items-start gap-4">
                     <div className="p-3 rounded-lg bg-primary/10 text-primary group-hover:bg-primary/20 transition-colors">
                       <item.icon size={24} />
@@ -78,13 +78,13 @@ const AboutSection = () => {
                     </div>
                   </div>
                 </div>
-              ))}
+              )}
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default AboutSection;
