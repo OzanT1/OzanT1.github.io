@@ -21,7 +21,6 @@ const HeroSection = () => {
 
           {/* Name */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 opacity-0 animate-fade-in-up animation-delay-200">
-            <span className="text-foreground">I'm </span>
             <span className="text-gradient">Ozan Utku Yılmaz</span>
           </h1>
 

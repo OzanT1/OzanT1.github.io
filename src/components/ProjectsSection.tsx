@@ -110,7 +110,7 @@ const categories: Category[] = [
   },
   {
     id: 'gamedev',
-    label: 'Game Dev',
+    label: 'Game Development',
     icon: Gamepad2,
     projects: [
       {
