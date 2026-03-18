@@ -1,5 +1,8 @@
 import { ExternalLink, Github, Trophy, Gamepad2, Server, Youtube, LucideIcon } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import tankGameImage from '@/assets/Tank_Game_Prototype_Image.png';
+import deadCenterImage from '@/assets/Dead_Center_Image.png';
+import thirdPersonShooterImage from '@/assets/Third-Person_Shooter_Game_Image.png';
 
 interface Project {
   title: string;
@@ -10,6 +13,7 @@ interface Project {
   live?: string;
   inDev?: boolean;
   award?: boolean;
+  image?: string;
 }
 
 interface Category {
@@ -39,10 +43,16 @@ const ProjectCard = ({ project }: { project: Project }) => (
   <div className={`bg-card border rounded-lg overflow-hidden card-hover group ${project.award ? 'border-accent/50' : 'border-border'}`}>
     {/* Image placeholder */}
     <div className="aspect-video bg-card relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
-      <div className="absolute inset-0 flex items-center justify-center">
-        <span className="text-muted-foreground text-sm text-center px-4">{project.title}</span>
-      </div>
+      {project.image ? (
+        <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
+      ) : (
+        <>
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20" />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <span className="text-muted-foreground text-sm text-center px-4">{project.title}</span>
+          </div>
+        </>
+      )}
       <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity" />
     </div>
 
@@ -125,18 +135,21 @@ const categories: Category[] = [
         description: 'Built a fully playable third-person shooter game featuring core combat mechanics with Behavior Tree–driven enemy AI using Unreal Engine 5.',
         tech: ['C++', 'Unreal Engine 5', 'Behavior Trees', 'AI'],
         github: 'https://github.com/OzanT1/THIRD-PERSON-SHOOTER-GAME-USING-UNREAL-ENGINE-5',
+        image: thirdPersonShooterImage,
       },
       {
         title: 'Dead Center',
         description: 'Developed an endless third-person survival shooter with arena-based combat, infinite enemy spawning systems, user interfaces, and AI enemies that continuously pursue the player within a confined arena.',
         tech: ['Unreal Engine 4', 'Blueprints', 'PC'],
         youtube: 'https://www.youtube.com/watch?v=VdiY_CpLYj8',
+        image: deadCenterImage,
       },
       {
         title: 'Tank Game Prototype',
         description: 'Developed a 3D tank game prototype implementing shooting mechanics, player health systems, and basic enemy AI using Unreal Engine 5 and C++.',
         tech: ['C++', 'Unreal Engine 5'],
         github: 'https://github.com/OzanT1/ToonTanks--A-Tank-Game-Prototype',
+        image: tankGameImage,
       },
     ],
   },
