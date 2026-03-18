@@ -135,6 +135,7 @@ const categories: Category[] = [
         description: 'Built a fully playable third-person shooter game featuring core combat mechanics with Behavior Tree–driven enemy AI using Unreal Engine 5.',
         tech: ['C++', 'Unreal Engine 5', 'Behavior Trees', 'AI'],
         github: 'https://github.com/OzanT1/THIRD-PERSON-SHOOTER-GAME-USING-UNREAL-ENGINE-5',
+        image: thirdPersonShooterImage,
       },
       {
         title: 'Dead Center',
