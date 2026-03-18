@@ -149,6 +149,7 @@ const categories: Category[] = [
         description: 'Developed a 3D tank game prototype implementing shooting mechanics, player health systems, and basic enemy AI using Unreal Engine 5 and C++.',
         tech: ['C++', 'Unreal Engine 5'],
         github: 'https://github.com/OzanT1/ToonTanks--A-Tank-Game-Prototype',
+        image: tankGameImage,
       },
     ],
   },
