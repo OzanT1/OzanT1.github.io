@@ -142,6 +142,7 @@ const categories: Category[] = [
         description: 'Developed an endless third-person survival shooter with arena-based combat, infinite enemy spawning systems, user interfaces, and AI enemies that continuously pursue the player within a confined arena.',
         tech: ['Unreal Engine 4', 'Blueprints', 'PC'],
         youtube: 'https://www.youtube.com/watch?v=VdiY_CpLYj8',
+        image: deadCenterImage,
       },
       {
         title: 'Tank Game Prototype',
