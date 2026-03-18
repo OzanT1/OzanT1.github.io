@@ -10,7 +10,7 @@ const AboutSection = () => {
   {
     icon: Gamepad2,
     title: 'Game Development',
-    description: 'Creating immersive experiences with Unity, Unreal, and custom engines'
+    description: 'Creating immersive experiences using Unreal Engine 5 and Unity'
   },
   {
     icon: Code2,
