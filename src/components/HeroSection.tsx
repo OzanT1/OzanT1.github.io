@@ -33,8 +33,8 @@ const HeroSection = () => {
 
           {/* Description */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 opacity-0 animate-fade-in-up animation-delay-600">
-            Passionate about building robust backend systems and crafting immersive game experiences. 
-            Turning complex problems into elegant solutions.
+            Passionate about crafting immersive game experiences and building robust backend systems. Turning complex problems into elegant solutions.
+          
           </p>
 
           {/* Social links */}
@@ -58,8 +58,8 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default HeroSection;
