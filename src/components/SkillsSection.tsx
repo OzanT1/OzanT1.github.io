@@ -8,7 +8,7 @@ const SkillsSection = () => {
     },
     {
       title: 'Frameworks & Libraries',
-      skills: ['ASP.NET Core', 'Entity Framework', 'FastAPI', 'Node.js', 'Express.js', 'React', 'PyTorch'],
+      skills: ['ASP.NET Core', 'Entity Framework Core', 'FastAPI', 'Node.js', 'Express.js', 'React', 'PyTorch'],
     },
     {
       title: 'Game Development',
