@@ -1,5 +1,8 @@
 import { ExternalLink, Github, Trophy, Gamepad2, Server, Youtube, LucideIcon } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import tankGameImage from '@/assets/Tank_Game_Prototype_Image.png';
+import deadCenterImage from '@/assets/Dead_Center_Image.png';
+import thirdPersonShooterImage from '@/assets/Third-Person_Shooter_Game_Image.png';
 
 interface Project {
   title: string;
@@ -10,6 +13,7 @@ interface Project {
   live?: string;
   inDev?: boolean;
   award?: boolean;
+  image?: string;
 }
 
 interface Category {
