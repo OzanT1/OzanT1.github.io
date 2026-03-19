@@ -165,6 +165,7 @@ const categories: Category[] = [
         description: 'Implemented LSTM and GRU models to forecast stock prices, including data preprocessing, visualization, and model evaluation.',
         tech: ['Python', 'PyTorch', 'Deep Learning', 'LSTM', 'GRU'],
         github: 'https://github.com/OzanT1/Stock-Price-Prediction',
+        image: stockPredictionImage,
       },
       {
         title: '2nd Place — HorizonAI Global Hackathon 2025',
