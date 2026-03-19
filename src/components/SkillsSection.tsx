@@ -15,12 +15,12 @@ const SkillsSection = () => {
       skills: ['Unreal Engine 5', 'Unity'],
     },
     {
-      title: 'Databases & Cloud',
-      skills: ['MySQL', 'PostgreSQL', 'Redis', 'AWS', 'Firebase'],
+      title: 'Databases & Tools',
+      skills: ['MySQL', 'PostgreSQL', 'Redis', 'Git', 'GitHub', 'Docker', 'RabbitMQ', 'WebSockets'],
     },
     {
-      title: 'Tools & Concepts',
-      skills: ['Git', 'GitHub', 'Docker', 'RabbitMQ', 'WebSockets', 'AI Integrations', 'OOP', 'Clean Code', 'Data Structures & Algorithms', 'AI-assisted Development Workflows (Claude, GitHub Copilot)', 'Real-time Systems'],
+      title: 'Concepts & Cloud',
+      skills: ['AWS', 'Firebase', 'AI Integrations', 'OOP', 'Clean Code', 'Data Structures & Algorithms', 'AI-assisted Development Workflows (Claude, GitHub Copilot)', 'Real-time Systems'],
     },
     {
       title: 'Languages (Spoken)',
