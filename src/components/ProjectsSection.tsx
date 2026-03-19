@@ -173,6 +173,7 @@ const categories: Category[] = [
         tech: ['Python', 'Flutter', 'AI'],
         live: 'https://devpost.com/software/survivor-ai',
         award: true,
+        image: hackathonImage,
       },
     ],
   },
