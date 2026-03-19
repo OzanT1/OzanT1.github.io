@@ -3,6 +3,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import tankGameImage from '@/assets/Tank_Game_Prototype_Image.png';
 import deadCenterImage from '@/assets/Dead_Center_Image.png';
 import thirdPersonShooterImage from '@/assets/Third-Person_Shooter_Game_Image.png';
+import stockPredictionImage from '@/assets/Stock-Price-Prediction-Image.png';
+import hackathonImage from '@/assets/2nd_Place_—_HorizonAI_Global_Hackathon_2025_Image.png';
 
 interface Project {
   title: string;
