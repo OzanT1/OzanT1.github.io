@@ -16,11 +16,11 @@ const SkillsSection = () => {
     },
     {
       title: 'Databases & Cloud',
-      skills: ['MySQL', 'PostgreSQL', 'Redis', 'AWS', 'Firebase', 'Docker'],
+      skills: ['MySQL', 'PostgreSQL', 'Redis', 'AWS', 'Firebase'],
     },
     {
       title: 'Tools & Concepts',
-      skills: ['Git', 'GitHub', 'WebSockets', 'AI Integrations', 'OOP', 'Clean Code'],
+      skills: ['Git', 'GitHub', 'Docker', 'RabbitMQ', 'WebSockets', 'AI Integrations', 'OOP', 'Clean Code', 'Data Structures & Algorithms', 'AI-assisted Development Workflows (Claude, GitHub Copilot)', 'Real-time Systems'],
     },
     {
       title: 'Languages (Spoken)',
