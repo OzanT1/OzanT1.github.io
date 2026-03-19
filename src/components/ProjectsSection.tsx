@@ -3,6 +3,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import tankGameImage from '@/assets/Tank_Game_Prototype_Image.png';
 import deadCenterImage from '@/assets/Dead_Center_Image.png';
 import thirdPersonShooterImage from '@/assets/Third-Person_Shooter_Game_Image.png';
+import stockPredictionImage from '@/assets/Stock-Price-Prediction-Image.png';
+import hackathonImage from '@/assets/2nd_Place_—_HorizonAI_Global_Hackathon_2025_Image.png';
 
 interface Project {
   title: string;
@@ -163,6 +165,7 @@ const categories: Category[] = [
         description: 'Implemented LSTM and GRU models to forecast stock prices, including data preprocessing, visualization, and model evaluation.',
         tech: ['Python', 'PyTorch', 'Deep Learning', 'LSTM', 'GRU'],
         github: 'https://github.com/OzanT1/Stock-Price-Prediction',
+        image: stockPredictionImage,
       },
       {
         title: '2nd Place — HorizonAI Global Hackathon 2025',
@@ -170,6 +173,7 @@ const categories: Category[] = [
         tech: ['Python', 'Flutter', 'AI'],
         live: 'https://devpost.com/software/survivor-ai',
         award: true,
+        image: hackathonImage,
       },
     ],
   },
