@@ -6,6 +6,8 @@ import thirdPersonShooterImage from '@/assets/Third-Person_Shooter_Game_Image.pn
 import stockPredictionImage from '@/assets/Stock-Price-Prediction-Image.png';
 import hackathonImage from '@/assets/2nd_Place_—_HorizonAI_Global_Hackathon_2025_Image.png';
 import maintenanceProtocolImage from '@/assets/Maintenance_Protocol_Image.png';
+import cubeMatchImage from '@/assets/CubeMatchGame_Image.png';
+import spaceshipInvaderImage from '@/assets/Space_Ship_Invader_Image.png';
 
 interface Project {
   title: string;
@@ -154,6 +156,20 @@ const categories: Category[] = [
         tech: ['C++', 'Unreal Engine 5'],
         github: 'https://github.com/OzanT1/ToonTanks--A-Tank-Game-Prototype',
         image: tankGameImage,
+      },
+      {
+        title: 'Cube Match Mobile Game',
+        description: 'A Unity puzzle mobile game where players match adjacent cubes of the same type to clear them from the board. The project demonstrates grid-based game logic, match detection, and basic UI interactions.',
+        tech: ['Unity', 'C#', 'Mobile Game'],
+        github: 'https://github.com/OzanT1/Cube-Match-Game',
+        image: cubeMatchImage,
+      },
+      {
+        title: 'Spaceship Invader',
+        description: 'Developed a 2D endless runner side-scroller game for mobile platforms, inspired by Jetpack Joyride.',
+        tech: ['Unity', 'C#', 'Mobile Game'],
+        youtube: 'https://www.youtube.com/watch?v=nDdieIL9Ahg',
+        image: spaceshipInvaderImage,
       },
     ],
   },
