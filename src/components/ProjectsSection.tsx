@@ -127,11 +127,12 @@ const categories: Category[] = [
     icon: Gamepad2,
     projects: [
       {
-        title: 'Maintenance: Abandoned Station',
-        description: 'Developing a multiplayer co-op horror game using a server-authoritative listen-server networking model. Implemented fully replicated interaction and task systems, AI enemies using Behavior Trees and AI Perception (sight and hearing), and a character locomotion system designed for multiplayer gameplay.',
+        title: 'Maintenance Protocol',
+        description: 'Developing an online multiplayer game using a server-authoritative networking architecture. Implemented fully replicated gameplay systems with bandwidth-conscious state synchronization. Designed latency-aware interaction systems for deterministic multiplayer behavior. Focused on runtime performance in a real-time environment.',
         tech: ['C++', 'Unreal Engine 5', 'Multiplayer', 'Behavior Trees', 'AI'],
         youtube: 'https://www.youtube.com/watch?v=PClBa2uX1Bw',
         inDev: true,
+        image: maintenanceProtocolImage,
       },
       {
         title: 'Third-Person Shooter Game',
