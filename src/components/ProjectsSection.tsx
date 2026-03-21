@@ -6,6 +6,8 @@ import thirdPersonShooterImage from '@/assets/Third-Person_Shooter_Game_Image.pn
 import stockPredictionImage from '@/assets/Stock-Price-Prediction-Image.png';
 import hackathonImage from '@/assets/2nd_Place_—_HorizonAI_Global_Hackathon_2025_Image.png';
 import maintenanceProtocolImage from '@/assets/Maintenance_Protocol_Image.png';
+import cubeMatchImage from '@/assets/CubeMatchGame_Image.png';
+import spaceshipInvaderImage from '@/assets/Space_Ship_Invader_Image.png';
 
 interface Project {
   title: string;
