@@ -9,7 +9,7 @@ const Footer = () => {
             <span className="text-primary">{' />'}</span>
           </p>
           <p className="font-mono text-xs text-muted-foreground/60 mt-2">
-            © {new Date().getFullYear()} Your Name. All rights reserved.
+            © {new Date().getFullYear()} Ozan Utku Yilmaz. All rights reserved.
           </p>
         </div>
       </div>

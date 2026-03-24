@@ -27,7 +27,7 @@ const ContactSection = () => {
               </div>
               <div className="flex items-center gap-3">
                 <span className="text-muted-foreground w-24">Location:</span>
-                <span className="text-foreground">Turkey</span>
+                <span className="text-foreground">Turkey/Istanbul</span>
               </div>
               <div className="flex items-center gap-3">
                 <span className="text-muted-foreground w-24">Status:</span>
