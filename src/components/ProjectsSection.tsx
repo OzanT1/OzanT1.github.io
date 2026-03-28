@@ -111,7 +111,7 @@ const categories: Category[] = [
     projects: [
       {
         title: 'E-Commerce Backend System',
-        description: 'A multi-container backend system for e-commerce applications built using ASP.NET Core 9.0, RabbitMQ, Redis, and PostgreSQL. All services are containerized using Docker (Docker Compose) for easy deployment.',
+        description: 'An asynchronous backend system built with ASP.NET Core 9.0, utilizing RabbitMQ for decoupled message processing and Redis for distributed caching. Orchestrated with Docker Compose to manage a multi-container environment including API, Background Workers, and PostgreSQL.',
         tech: ['C#', 'ASP.NET Core', 'REST API', 'RabbitMQ', 'Redis', 'PostgreSQL', 'Docker'],
         github: 'https://github.com/OzanT1/ECommerce-Backend-System',
       },
