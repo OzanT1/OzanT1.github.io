@@ -47,6 +47,12 @@
 .monogram { font-family: Georgia, serif; font-size: 42px; line-height: 1; letter-spacing: -7px; padding-right: 6px; }
 .monogram span { color: var(--bright-orange); }
 .nav-links { display: flex; align-items: center; gap: 38px; font-size: 13px; }
+.navigation-actions { display: flex; align-items: center; gap: 30px; }
+.language-switcher { display: inline-flex; align-items: center; gap: 3px; flex-shrink: 0; font-size: 11px; }
+.language-switcher > span { color: var(--soft-ink); }
+.language-switcher button { border: 0; border-bottom: 2px solid transparent; background: transparent; color: var(--soft-ink); padding: 8px 5px; min-width: 30px; min-height: 36px; cursor: pointer; }
+.language-switcher button[aria-pressed="true"] { border-bottom-color: var(--orange); color: var(--orange); font-weight: 700; }
+.language-switcher button:hover { color: var(--orange); }
 .nav-links a { display: inline-flex; gap: 7px; align-items: center; padding-block: 12px; }
 .nav-links sup { font-size: 9px; color: var(--orange); align-self: flex-start; }
 .nav-contact { border-bottom: 1px solid var(--ink); }
@@ -198,6 +204,10 @@ h2 em { color: var(--orange); font-size: 1.15em; }
 .footer-links a:hover { color: #ed9877; }
 .skip-link { position: fixed; top: -100px; left: 16px; z-index: 100; background: var(--ink); color: white; padding: 14px 20px; }
 .skip-link:focus { top: 12px; }
+.not-found { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px; padding: 24px; }
+.not-found h1 { font-size: 80px; line-height: 1; }
+.not-found p { color: var(--soft-ink); text-align: center; }
+html[lang="tr"] .workshop-shared { font-size: 24px; }
 
 @media (min-width: 1440px) {
   .hero { padding-top: 65px; }
@@ -252,14 +262,16 @@ h2 em { color: var(--orange); font-size: 1.15em; }
   .contact-layout { gap: 35px; }
 }
 @media (max-width: 560px) {
-  html { scroll-padding-top: 88px; }
-  section, article { scroll-margin-top: 90px; }
+  html { scroll-padding-top: 124px; }
+  section, article { scroll-margin-top: 124px; }
   .page-width { width: calc(100% - 40px); }
-  .navigation { min-height: 72px; gap: 14px; }
+  .navigation { min-height: 108px; display: grid; grid-template-columns: 1fr auto; gap: 4px 14px; padding-block: 12px 7px; }
+  .navigation-actions { display: contents; }
+  .language-switcher { grid-column: 2; grid-row: 1; }
   .wordmark { gap: 9px; }
-  .wordmark > span:last-child { max-width: 75px; font-size: 11px; line-height: 1.3; }
+  .wordmark > span:last-child { max-width: 120px; font-size: 12px; line-height: 1.3; }
   .monogram { font-size: 35px; }
-  .nav-links { gap: 18px; font-size: 11px; }
+  .nav-links { grid-column: 1 / -1; grid-row: 2; justify-content: space-between; gap: 18px; font-size: 11px; }
   .nav-links a { gap: 4px; }
   .nav-links sup { display: none; }
   .nav-contact svg { display: none; }

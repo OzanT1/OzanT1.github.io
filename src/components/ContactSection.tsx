@@ -1,28 +1,37 @@
 import { useState } from 'react';
 import { ArrowUpRight, Check, Copy } from 'lucide-react';
+import { useLanguage } from '@/i18n/LanguageContext';
 
 export default function ContactSection() {
-  const [copyStatus, setCopyStatus] = useState('');
+  const { copy: { contact: copy } } = useLanguage();
+  const [copyStatus, setCopyStatus] = useState<'idle' | 'copied' | 'failed'>('idle');
   const email = 'ozanutkuyilmaz@gmail.com';
 
   async function copyEmail() {
     try {
       await navigator.clipboard.writeText(email);
-      setCopyStatus('Email copied.');
+      setCopyStatus('copied');
     } catch {
-      setCopyStatus('Select the email address to copy it, or click it to open your email app.');
+      setCopyStatus('failed');
     }
   }
 
   return (
     <section className="contact-section" id="contact" aria-labelledby="contact-heading">
       <div className="page-width">
-        <div className="section-kicker eyebrow"><span>03 / What’s next?</span><span>Let’s make something useful.</span></div>
+        <div className="section-kicker eyebrow"><span>{copy.kicker}</span><span>{copy.note}</span></div>
         <div className="contact-layout">
-          <h2 id="contact-heading">Have something<br /><em>in mind?</em></h2>
-          <div className="contact-copy"><p>A problem to solve, an idea to explore, or a team to build with. I’d love to hear about it.</p><a className="contact-cta" href={`mailto:${email}`}>Let’s talk <ArrowUpRight size={26} aria-hidden="true" /></a></div>
+          <h2 id="contact-heading">{copy.firstLine}<br /><em>{copy.emphasis}</em></h2>
+          <div className="contact-copy"><p>{copy.intro}</p><a className="contact-cta" href={`mailto:${email}`}>{copy.talk}<ArrowUpRight size={26} aria-hidden="true" /></a></div>
         </div>
-        <div className="contact-bottom"><a className="email-address" href={`mailto:${email}`}>{email}</a><button className="copy-email" onClick={copyEmail} aria-label="Copy email address">{copyStatus === 'Email copied.' ? <Check size={17} /> : <Copy size={17} />}<span>{copyStatus === 'Email copied.' ? 'Copied' : 'Copy email'}</span></button><span className="copy-status" role="status">{copyStatus}</span></div>
+        <div className="contact-bottom">
+          <a className="email-address" href={`mailto:${email}`}>{email}</a>
+          <button className="copy-email" type="button" onClick={copyEmail} aria-label={copy.copyLabel}>
+            {copyStatus === 'copied' ? <Check size={17} aria-hidden="true" /> : <Copy size={17} aria-hidden="true" />}
+            <span>{copyStatus === 'copied' ? copy.copied : copy.copy}</span>
+          </button>
+          <span className="copy-status" role="status">{copyStatus === 'copied' ? copy.success : copyStatus === 'failed' ? copy.failure : ''}</span>
+        </div>
       </div>
     </section>
   );
