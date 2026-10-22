@@ -27,3 +27,7 @@ All 19 projects are in one collection in `src/data/projects.ts`. Each entry has 
 Interface copy and experience in both languages are in `src/i18n/messages.ts`. Styles are in `src/index.css`. Project descriptions and contribution notes are documented in [content sources](docs/content-sources.md).
 
 Fonts and project images are served locally. No GitHub API call is needed when someone visits the site.
+
+## Search visibility
+
+The canonical homepage is listed in `public/sitemap.xml`, which is referenced by `public/robots.txt`. ProfilePage / Person structured data is in `index.html`. Search Console verification and indexing steps, plus remaining rendering and multilingual SEO considerations, are documented in [search visibility](docs/search-visibility.md).

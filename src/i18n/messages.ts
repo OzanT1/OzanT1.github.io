@@ -1,7 +1,7 @@
 const en = {
   meta: {
-    title: 'Ozan Utku Yılmaz — Always curious. Always building.',
-    description: "I'm Ozan, a software engineer in Istanbul. I love building software, solving unfamiliar problems, and learning whatever it takes. Explore some of the things I've built.",
+    title: 'Ozan Utku Yılmaz | Software Engineer',
+    description: 'Ozan Utku Yılmaz is a software engineer based in Istanbul. Explore his software projects, experience, and the problems he has worked on.',
     locale: 'en_US',
   },
   common: { skip: 'Skip to content', home: 'Return to Home', notFound: 'This page could not be found.' },
@@ -61,8 +61,8 @@ const en = {
 // The shared shape makes missing interface translations a TypeScript error.
 const tr: typeof en = {
   meta: {
-    title: 'Ozan Utku Yılmaz — Hep meraklı. Hep üreten.',
-    description: 'Ben Ozan, İstanbul’da yaşayan bir yazılım mühendisiyim. Yazılım geliştirmeyi, yeni problemleri çözmeyi ve gereken her şeyi öğrenmeyi seviyorum. Geliştirdiğim projelere göz atın.',
+    title: 'Ozan Utku Yılmaz | Yazılım Mühendisi',
+    description: 'Ozan Utku Yılmaz, İstanbul’da yaşayan bir yazılım mühendisidir. Geliştirdiği yazılım projelerine, deneyimine ve üzerinde çalıştığı problemlere göz atın.',
     locale: 'tr_TR',
   },
   common: { skip: 'İçeriğe geç', home: 'Ana sayfaya dön', notFound: 'Bu sayfa bulunamadı.' },
