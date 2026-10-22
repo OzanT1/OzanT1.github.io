@@ -1,90 +1,29 @@
-import { Gamepad2, Server, Code2 } from 'lucide-react';
+const experience = [
+  { company: 'PEILABS', date: 'Part-time · Nov 2024–Oct 2025', text: 'Built multiplayer systems in C# and Unity while finishing university. Replaced polling with an event-driven AI architecture, improving AI system performance by 30%.' },
+  { company: 'Omni Factors', date: 'Internship · Aug–Sep 2024', text: 'Built full-stack features and CRM automations with Node.js and Zendesk APIs. Resolved an API rate-limiting issue affecting system stability.' },
+  { company: 'Microsoft', date: 'Internship · Jul–Aug 2024', text: 'Worked on time-series models in Python and PyTorch: preparing data, training LSTM and GRU models, and evaluating the results.' },
+];
 
-const AboutSection = () => {
-  const highlights = [
-  {
-    icon: Server,
-    title: 'Backend Development',
-    description: 'Building scalable APIs, server-side solutions, and distributed systems using modern .NET ecosystem'
-  },
-  {
-    icon: Gamepad2,
-    title: 'Game Development',
-    description: 'Creating immersive experiences using Unreal Engine 5 and Unity'
-  },
-  {
-    icon: Code2,
-    title: 'Clean Architecture',
-    description: 'Writing maintainable, testable, and performant code'
-  }];
-
-
+export default function AboutSection() {
   return (
-    <section id="about" className="py-24 relative">
-      <div className="container mx-auto px-6">
-        <div className="max-w-6xl mx-auto">
-          {/* Section header */}
-          <div className="flex items-center gap-4 mb-12">
-            <h2 className="text-3xl font-bold">
-              About Me
-            </h2>
-            <div className="flex-1 h-px bg-border" />
+    <section className="about-section" id="about" aria-labelledby="about-heading">
+      <div className="page-width">
+        <div className="section-kicker eyebrow"><span>02 / A little about me</span><span>Ozan Utku Yılmaz</span></div>
+        <div className="about-layout">
+          <div className="about-copy">
+            <h2 id="about-heading">I like the part where<br />something <em>clicks.</em></h2>
+            <p className="about-lead">An unfamiliar problem is a good reason to learn something new.</p>
+            <p>I’m a software engineer based in Istanbul. I like understanding how things work, asking useful questions, and staying with a problem until there’s something real on the other side.</p>
+            <p>Sometimes that means building a tool from scratch for a business owner. Sometimes it means making a team’s systems work better. I care about understanding what’s needed, choosing the right tools, and following through.</p>
+            <div className="education-note"><span className="small-cross" aria-hidden="true">✳</span><p><strong>BSc, Computer Engineering</strong><br />MEF University · 2021–2025<br /><span>Honors · GPA 3.22 / 4.00</span></p></div>
           </div>
-
-          <div className="grid md:grid-cols-2 gap-12 items-start">
-            {/* Text content */}
-            <div className="space-y-6">
-              <div className="space-y-2 text-muted-foreground">
-                <p className="text-foreground leading-relaxed text-lg">
-                  I'm a software engineer with a deep passion for both game development and backend development. I love the challenge of building systems that are both performant and maintainable.
-                
-
-                </p>
-              </div>
-
-              <p className="text-muted-foreground leading-relaxed">
-                My journey in software development started with a curiosity about how games work. 
-                This led me down the path of understanding low-level systems, which naturally 
-                evolved into a love for backend architecture.
-              </p>
-
-              <p className="text-muted-foreground leading-relaxed">
-                Today, I combine these passions by building efficient server-side solutions 
-                and creating engaging game experiences. Whether it's optimizing database queries 
-                or implementing game physics, I approach every problem with the same dedication 
-                to excellence.
-              </p>
-            </div>
-
-            {/* Highlight cards */}
-            <div className="space-y-4">
-              {highlights.map((item, index) =>
-              <div
-                key={item.title}
-                className="group bg-card border border-border rounded-lg p-6 card-hover"
-                style={{ animationDelay: `${index * 100}ms` }}>
-                
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-lg bg-primary/10 text-primary group-hover:bg-primary/20 transition-colors">
-                      <item.icon size={24} />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-lg mb-2 group-hover:text-primary transition-colors">
-                        {item.title}
-                      </h3>
-                      <p className="text-muted-foreground text-sm">
-                        {item.description}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              )}
-            </div>
+          <div className="experience-list">
+            <p className="eyebrow experience-label">A few places I’ve contributed</p>
+            {experience.map(item => <div className="experience-item" key={item.company}><div><h3>{item.company}</h3><span>{item.date}</span></div><p>{item.text}</p></div>)}
+            <a className="text-link" href="https://www.linkedin.com/in/ozan-utku-y%C4%B1lmaz" target="_blank" rel="noopener noreferrer">More of the story on LinkedIn <span aria-hidden="true">↗</span></a>
           </div>
         </div>
       </div>
-    </section>);
-
-};
-
-export default AboutSection;
+    </section>
+  );
+}

@@ -1,65 +1,36 @@
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowDown, ArrowUpRight } from 'lucide-react';
+import maintenanceImage from '@/assets/projects/Maintenance_Protocol_Image.webp';
 
-const HeroSection = () => {
+export default function HeroSection() {
   return (
-    <section className="min-h-screen flex items-center justify-center relative scanline">
-      {/* Background grid effect */}
-      <div className="absolute inset-0 bg-[linear-gradient(hsl(var(--primary)/0.03)_1px,transparent_1px),linear-gradient(90deg,hsl(var(--primary)/0.03)_1px,transparent_1px)] bg-[size:50px_50px]" />
-      
-      {/* Gradient orbs */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[128px] animate-float" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-[128px] animate-float animation-delay-200" />
-
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
-          {/* Greeting */}
-          <div className="inline-block mb-6 opacity-0 animate-fade-in-up">
-            <span className="text-sm text-muted-foreground uppercase tracking-wider">
-              Hello, I'm
-            </span>
-          </div>
-
-          {/* Name */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 opacity-0 animate-fade-in-up animation-delay-200">
-            <span className="text-gradient">Ozan Utku Yılmaz</span>
-          </h1>
-
-          {/* Role */}
-          <div className="h-12 mb-8 opacity-0 animate-fade-in-up animation-delay-400">
-            <span className="text-2xl md:text-3xl text-primary glow-text font-medium">
-              Software Engineer
-            </span>
-          </div>
-
-          {/* Description */}
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 opacity-0 animate-fade-in-up animation-delay-600">
-            Passionate about crafting immersive game experiences and building robust backend systems. Turning complex problems into elegant solutions.
-          
-          </p>
-
-          {/* Social links */}
-          <div className="flex items-center justify-center gap-6 opacity-0 animate-fade-in-up animation-delay-600">
-            <a href="https://github.com/OzanT1" target="_blank" rel="noopener noreferrer" className="p-3 border-glow rounded-full text-muted-foreground hover:text-primary hover:border-primary/60 transition-all">
-              <Github size={24} />
-            </a>
-            <a href="https://www.linkedin.com/in/ozan-utku-yılmaz" target="_blank" rel="noopener noreferrer" className="p-3 border-glow rounded-full text-muted-foreground hover:text-primary hover:border-primary/60 transition-all">
-              <Linkedin size={24} />
-            </a>
-            <a href="mailto:ozanutkuyilmaz@gmail.com" className="p-3 border-glow rounded-full text-muted-foreground hover:text-primary hover:border-primary/60 transition-all">
-              <Mail size={24} />
-            </a>
-          </div>
-
-          {/* Scroll indicator */}
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-            <div className="w-6 h-10 border-2 border-muted-foreground/30 rounded-full flex justify-center">
-              <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-pulse" />
-            </div>
-          </div>
+    <section className="hero page-width" aria-labelledby="intro-heading">
+      <div className="hero-eyebrow eyebrow"><span className="small-cross" aria-hidden="true">✳</span> Software engineer <span className="eyebrow-location">Istanbul, Türkiye</span></div>
+      <div className="hero-layout">
+        <div className="hero-copy">
+          <h1 id="intro-heading">Always curious.<br />Always <em>building.</em></h1>
+          <p>I’m Ozan. I love making software, figuring out unfamiliar problems, and learning whatever it takes to turn an idea into something that works.</p>
+          <a className="text-link hero-cta" href="#projects">Take a look at the work <ArrowDown size={18} aria-hidden="true" /></a>
+        </div>
+        <div className="work-collage" aria-label="A few things from my workbench">
+          <span className="collage-note">A few things from<br />my workbench.</span>
+          <a href="#creator-outreach" className="collage-sheet collage-automation">
+            <span className="mini-eyebrow">A business problem, solved.</span>
+            <span className="mini-flow"><span>Find</span><span aria-hidden="true">→</span><span>Connect</span><span aria-hidden="true">→</span><span>Track</span></span>
+            <span className="sheet-caption">Creator outreach, on autopilot <ArrowUpRight size={14} aria-hidden="true" /></span>
+          </a>
+          <a href="#maintenance-protocol" className="collage-sheet collage-world">
+            <img src={maintenanceImage} alt="Maintenance Protocol’s industrial multiplayer world" width="480" height="270" />
+            <span className="sheet-caption">A world to build together <ArrowUpRight size={14} aria-hidden="true" /></span>
+          </a>
+          <a href="#bezier-editor" className="collage-sheet collage-curve">
+            <span className="mini-eyebrow">An idea, given shape.</span>
+            <svg viewBox="0 0 240 100" aria-hidden="true"><path className="curve-handles" d="M20 80 70 0M170 100 220 20" /><path className="curve-line" d="M20 80C70 0 170 100 220 20" /><circle cx="20" cy="80" r="4" /><circle cx="220" cy="20" r="4" /><rect x="66" y="0" width="8" height="8" /><rect x="166" y="92" width="8" height="8" /></svg>
+            <span className="sheet-caption">Bézier Road Editor <ArrowUpRight size={14} aria-hidden="true" /></span>
+          </a>
+          <span className="collage-star" aria-hidden="true">✳</span>
         </div>
       </div>
-    </section>);
-
-};
-
-export default HeroSection;
+      <div className="hero-footnote"><span>Different problems. The same drive to figure them out.</span><a href="https://github.com/OzanT1" target="_blank" rel="noopener noreferrer">The code is on GitHub <ArrowUpRight size={15} aria-hidden="true" /></a></div>
+    </section>
+  );
+}

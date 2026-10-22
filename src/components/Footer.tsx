@@ -1,20 +1,10 @@
-const Footer = () => {
-  return (
-    <footer className="py-8 border-t border-border">
-      <div className="container mx-auto px-6">
-        <div className="text-center">
-          <p className="font-mono text-sm text-muted-foreground">
-            <span className="text-primary">{'<'}</span>
-            Built with passion
-            <span className="text-primary">{' />'}</span>
-          </p>
-          <p className="font-mono text-xs text-muted-foreground/60 mt-2">
-            © {new Date().getFullYear()} Ozan Utku Yilmaz. All rights reserved.
-          </p>
-        </div>
-      </div>
-    </footer>
-  );
-};
+import { ArrowUpRight, ArrowUp } from 'lucide-react';
 
-export default Footer;
+export default function Footer() {
+  return (
+    <footer className="site-footer"><div className="page-width footer-inner">
+      <span>© {new Date().getFullYear()} Ozan Utku Yılmaz</span>
+      <div className="footer-links"><a href="https://github.com/OzanT1" target="_blank" rel="noopener noreferrer">GitHub <ArrowUpRight size={14} aria-hidden="true" /></a><a href="https://www.linkedin.com/in/ozan-utku-y%C4%B1lmaz" target="_blank" rel="noopener noreferrer">LinkedIn <ArrowUpRight size={14} aria-hidden="true" /></a><a href="#top">Back to top <ArrowUp size={14} aria-hidden="true" /></a></div>
+    </div></footer>
+  );
+}
